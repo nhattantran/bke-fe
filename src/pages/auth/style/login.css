@@ -1,0 +1,194 @@
+.login-page-bg {
+    background-image: url(https://static.goplay.vn/edu/bg/bg_edu.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.login-page {
+    position: relative;
+    overflow-x: hidden;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.login-box {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    padding: 80px 130px;
+}
+
+@media (max-width: 576px) {
+    .login-box {
+        justify-content: center;
+        padding: 30px 20px;
+    }
+}
+
+.box-center {
+    width: 430px;
+    background-color: hsla(0,0%,100%,.7);
+    backdrop-filter: blur(40px);
+    border-radius: 10px;
+    z-index: 999;
+}
+
+.login-form {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 30px
+}
+
+.logo {
+    margin: 45px 0;
+}
+
+img.logo {
+    vertical-align: middle;
+    border-style: none;
+}
+
+.row-input {
+    width: 100%;
+    margin: 10px 0;
+}
+
+.user-icon {
+    width: 16px;
+    height: 20px;
+    position: absolute;
+    z-index: 100;
+    margin-top: 10px;
+    margin-left: 15px;
+    font-size: 15px;
+}
+
+.user-input {
+    position: relative;
+    padding: 12px 12px 12px 40px;
+    border-radius: 50px;
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: #fff;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: #3e3e3e;
+}
+
+button input.user-input {
+    overflow: visible;
+}
+
+.warning-text {
+    color: red;
+    font-size: 14px;
+    font-style: italic;
+    margin-left: 15px;
+}
+
+.forget-password {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.forget-link {
+    color: #00649d;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.forget-link:hover {
+    text-decoration: underline;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+.login-btn {
+    background-color: #00649d;
+    box-shadow: 0 4px 40px rgb(0 0 0 / 15%), inset -2px -4px 15px rgb(0 0 0 / 14%);
+    text-transform: uppercase;
+    color: #fff;
+    padding: 12px;
+    border-radius: 50px;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-weight: 400;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+}
+
+button.login-btn {
+    overflow: visible;
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    --gap: 10px;
+}
+
+.divider::before {
+    margin-right: var(--gap);
+    content: '';
+    height: 1px;
+    background-color: #c4c4c4;
+    flex: 1 1;
+}
+
+.divider::after {
+    margin-left: var(--gap);
+    content: '';
+    height: 1px;
+    background-color: #c4c4c4;
+    flex: 1 1;
+}
+
+.facebook-icon {
+    background-color: #3856a3;
+    color: #fff;
+    font-size: 30px;
+}
+
+.facebook-icon:hover {
+    background-color: #5673bd;
+}
+
+.google-icon {
+    background-color: #c94131;
+    color: #fff;
+    font-size: 30px
+}
+
+.google-icon:hover {
+    background-color: #cf786e;
+}
+
+.item {
+    padding: 10px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}

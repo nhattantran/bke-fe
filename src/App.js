@@ -1,24 +1,35 @@
-import logo from './logo.svg';
 import './App.css';
 
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route
+} from "react-router-dom";
+
+import { PageRouter } from './route.js'
+import Page404 from './pages/auth/Page404.js';
+
 function App() {
+  const extractRoute =  (route) => (
+    route.map((item, index) =>{
+      const Component = item.component;
+      return (<Route
+        key={index}
+        path={item.path}
+        exact
+        element={<Component />}
+      />)
+    })
+    )
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Routes>
+        {extractRoute(PageRouter)}
+        <Route 
+          render={() => (<Page404 />)}
+        />
+      </Routes>
+    </Router>
   );
 }
 

@@ -1,0 +1,172 @@
+.bke-header {
+    width: 100%;
+}
+
+.bke-header * {
+    box-sizing: border-box;
+}
+
+#bke-header-keep_top {
+    position: relative;
+    width: 100%;
+    top: 0px;
+    left: 0px
+}
+
+.bke-header-menu-top {
+    background: rgba(0, 0, 0, 0.1)
+}
+
+.bk-logo {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.padding-for-container {
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.header-btn {
+    display: flex;
+    height: 40px;
+    align-items: center;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+
+.header-btn a {
+    font-size: 13px;
+    text-decoration: none;
+}
+
+@media (max-width: 992px) {
+    .show-hide-menu {
+        display: none !important;
+    }
+}
+
+.top-button {
+    height: 30px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #fff;
+    margin-left: 38px;
+    position: relative;
+    transition: all 0.2s ease;
+}
+
+.top-button:hover {
+    color: #ebf18d;
+    cursor: pointer;
+}
+
+.top-button::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 24px;
+    background-color: #fff;
+    opacity: 0.2;
+    position: absolute;
+    top: -2px;
+    left: -21px;
+}
+
+.phone-number {
+    height: 30px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #fff;
+    margin-left: 38px;
+    position: relative;
+    transition: all 0.2s ease;
+}
+
+.phone-number:hover {
+    color: #e7bd68;
+}
+
+.support {
+    font-size: 10px;
+    position: absolute;
+    margin-top:-10px;
+    margin-left: -80px;
+    background-color:yellow;
+    padding-left: 8px;
+    padding-right: 8px;
+    text-align: center;
+}
+
+.header-login-btn {
+    font-size: 13px;
+    height: 30px;
+    line-height: 30px;
+    color: #fff;
+    margin-left: 40px;
+    position: relative;
+    transition: all 0.2s ease;
+}
+
+.header-login-btn:hover {
+    color: #ebf192;
+}
+
+@media (min-width: 992px) {
+    .header-login-btn::after {
+        content: "";
+        display: block;
+        width: 1px;
+        height: 24px;
+        background-color: #fff;
+        opacity: 0.2;
+        position: absolute;
+        top: 6px;
+        left: -21px;
+    }
+}
+
+.header-login-icon {
+    margin-right: 5px;
+    font-size: 17px;
+}
+
+.header-register-btn {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 13px;
+    height: 30px;
+    line-height: 30px;
+    color: #68e7bd;
+    margin-left: 40px;
+    position: relative;
+    transition: all 0.2s ease;
+    background-color: #fff;
+    border-radius: 15px;
+}
+
+.header-register-btn:hover {
+    color: #68e7bd;
+    background-color: #ebf192;
+}
+
+.header-register-btn::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 24px;
+    background-color: #fff;
+    opacity: 0.2;
+    position: absolute;
+    top: 6px;
+    left: -21px;
+}
+
+
+/*
+#e77d68 orange
+#e7bd68 skin
+#9268e7 purple
+*/
