@@ -34,7 +34,7 @@ function Header() {
                                     <FaUserAlt className="header-login-icon"/>
                                     Đăng nhập
                                 </a>
-                                <a href="#" className="header-register-btn">Đăng ký</a>
+                                <a href="/register" className="header-register-btn">Đăng ký</a>
                             </div>
                         </Col>
                     </Row>

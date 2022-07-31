@@ -2,6 +2,7 @@ import async from './components/Async.js';
 
 const Login = async(() => import("./pages/auth/Login.js"));
 const Page404 = async(() => import("./pages/auth/Page404.js"));
+const Register = async(() => import("./pages/auth/Register.js"));
 
 const Homepage = async(() => import("./pages/homepage/Home.js"));
 
@@ -10,6 +11,13 @@ const LoginRouter = {
     path: '/login',
     component: Login,
     title: "Đăng nhập"
+}
+
+const RegisterRouter = {
+    id: "Register",
+    path: '/register',
+    component: Register,
+    title: "Đăng ký",
 }
 
 const Page404Router = {
@@ -28,6 +36,7 @@ const HomeRouter = {
 
 export const PageRouter = [
     LoginRouter,
+    RegisterRouter,
     Page404Router,
     HomeRouter,
 ]

@@ -25,8 +25,9 @@ function App() {
     <Router>
       <Routes>
         {extractRoute(PageRouter)}
-        <Route 
-          render={() => (<Page404 />)}
+        <Route
+          path="*"
+          element = {<Page404 />}
         />
       </Routes>
     </Router>

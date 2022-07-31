@@ -192,3 +192,7 @@ button.login-btn {
     display: flex;
     align-items: center;
 }
+
+label {
+    margin-bottom: 10px;
+}
