@@ -1,20 +1,23 @@
 import React, { useEffect } from 'react'
 import './style/login.css'
+import LocalStorageService from '../../service/LocalStorageService'
+import { useNavigate } from 'react-router-dom'
 
 import {
     BiUser,
     BiLock,
 } from 'react-icons/bi'
 
-import {
-    FaFacebookF,
-} from 'react-icons/fa';
+const localStorageService = LocalStorageService.getService();
 
-import {
-    BsGoogle,
-} from 'react-icons/bs';
 
 function Register() {
+    const navigate = useNavigate()
+    useEffect(() => {
+        if (localStorageService.getAccessToken()) {
+            navigate("/");
+        }
+    })
     useEffect(() => {
         document.title = 'Đăng ký'
     }, [])
